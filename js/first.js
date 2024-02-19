@@ -1,32 +1,4 @@
 
-
-//  const seata = document.getElementById('A1');
-//  console.log(seata);
-
-// id diye fanction add kora
-
-
-// seat left 40 er teke koyta ace
-
-//      const seat_number = parseInt(seat);
-//      console.log(parseInt(seat));
-
-//      //seat bikri hoice 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // must be rakte hobe
 const seat = document.getElementById('total-seat');
 //const seat_booked = document.getElementById('seat-booked');
@@ -47,8 +19,8 @@ for (const seatButon of allSeatButton) {
 
         // total seat bokking
         //4 ter besi seat kata jabe na
-        const tergetText = e.target.parentNode.childNodes[1].innerText;
-        console.log(tergetText);
+        // const tergetText = e.target.parentNode.childNodes[1].innerText;
+        // console.log(tergetText);
 
 
         //this.disabled.classList.add('bg-green-500') 
@@ -77,10 +49,6 @@ for (const seatButon of allSeatButton) {
         setInnetText('grand-total', totalprice)
 
     })
-
-
-
-
     //seatButon.classList.add('bg-green-500');
     //return totalprice
 };
