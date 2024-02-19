@@ -19,11 +19,12 @@ for (const seatButon of allSeatButton) {
 
         // total seat bokking
         //4 ter besi seat kata jabe na
-        // const tergetText = e.target.parentNode.childNodes[1].innerText;
-        // console.log(tergetText);
+        const tergetText = e.target.parentNode.childNodes[1].innerText;
+         console.log(tergetText);
 
 
         //this.disabled.classList.add('bg-green-500') 
+        seatButon.classList.add("bg-green-500")
 
         if (count <= 3) {
             count = count + 1;
@@ -42,7 +43,7 @@ for (const seatButon of allSeatButton) {
 
         }
         else {
-            alert('4 is enoug');
+            alert('You Cannot Buy More Than 4 Seats');
 
         };
         this.disabled = true;
@@ -50,7 +51,6 @@ for (const seatButon of allSeatButton) {
 
     })
     //seatButon.classList.add('bg-green-500');
-    //return totalprice
 };
 
 //apply section
