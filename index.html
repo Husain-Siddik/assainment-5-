@@ -190,13 +190,11 @@
                             <div class="flex justify-between px-5 lg:px-8 pt-5">
                                 <div class="flex gap-5 items-center">
                                     <h3 class="text-3xl font-semibold text-center">A</h3>
-                                    <button id="A1"
-                                        class=" seat  btn text-xl font-semibold lg:w-[100px]">A1</button>
+                                    <button id="A1" class=" seat  btn text-xl font-semibold lg:w-[100px]">A1</button>
                                     <button id="A2" class=" seat btn text-xl font-semibold lg:w-[100px]">A2</button>
                                 </div>
                                 <div class="flex gap-5">
-                                    <button id="A3"
-                                        class="btn seat  text-xl font-semibold lg:w-[100px]">A3</button>
+                                    <button id="A3" class="btn seat  text-xl font-semibold lg:w-[100px]">A3</button>
                                     <button id="A4" class="btn seat text-xl font-semibold lg:w-[100px]">A4</button>
                                 </div>
                             </div>
@@ -299,9 +297,15 @@
                             <!-- J SERIAL -->
                             <div class="flex justify-between px-5 lg:px-8 pt-5">
                                 <div class="flex gap-5 items-center">
-                                    <h3 class="text-3xl font-semibold text-center">J</h3>
-                                    <button id="J1" class="btn seat text-xl font-semibold lg:w-[100px]">J1</button>
-                                    <button id="J2" class="btn seat text-xl font-semibold lg:w-[100px]">J2</button>
+                                    <div>
+                                        <h3 class="text-3xl font-semibold text-center">J</h3>
+                                    </div>
+                                    <div>
+                                        <button id="J1" class="btn seat text-xl font-semibold lg:w-[100px]">J1</button>
+                                    </div>
+                                    <div>
+                                        <button id="J2" class="btn seat text-xl font-semibold lg:w-[100px]">J2</button>
+                                    </div>
                                 </div>
                                 <div class="flex gap-5">
                                     <button id="J3" class="btn seat text-xl font-semibold lg:w-[100px]">J3</button>
@@ -324,22 +328,31 @@
                                     Seat
                                     <span id="seat-booked"
                                         class="bg-green-500 text-white font-semibold ml-1 px-2 rounded-md">0</span>
-                                    </h3>
+                                </h3>
                                 <h3 class="text-xl font-semibold">Class</h3>
                                 <h3 class="text-xl font-semibold">Price</h3>
                             </div>
                             <hr class=" border-t-2 border-gray-300 border-dashed font-bold">
 
                             <!-- child added here  -->
-                           
-                            <div id ="seattiket" class="flex justify-between py-3">
-                               
+
+                            <div id="seattiket" class="flex justify-between py-3">
+
                                 <p id="seat" class="text-xl">A1</p>
                                 <p class="text-xl">Economoy</p>
                                 <p class="text-xl font-semibold">550</p>
-                               
-                            
-                           </div>
+
+
+                            </div>
+                            <div class="flex justify-between py-3">
+
+                            </div>
+                            <div class="flex justify-between py-3">
+
+                            </div>
+                            <div class="flex justify-between py-3">
+
+                            </div>
                             <!-- child shud be aded here -->
 
                             <hr class=" border-t-2 border-gray-300 border-solid font-bold">
@@ -349,9 +362,9 @@
                             </div>
                             <div class="mt-5">
                                 <div class="join">
-                                    <input class="input input-bordered join-item w-[310px]"
+                                    <input id="cupun-text" class="input input-bordered join-item w-[310px]"
                                         placeholder="Have any copon?" />
-                                    <button
+                                    <button id="apply"
                                         class="btn join-item rounded-r-2xl bg-green-500 font-semibold text-white text-xl">Apply</button>
                                 </div>
                             </div>
@@ -379,8 +392,28 @@
                                     class="w-full border-2 border-gray-300 border-solid p-3 text-xl rounded-xl">
                             </div>
                             <div class="mt-8">
-                                <button class="btn w-full text-xl font-semibold text-white bg-green-500">Next</button>
+                                <!-- <button 
+                                    class="btn w-full text-xl font-semibold text-white bg-green-500">Next</button> -->
+                                    <div>
+                                        <!-- Open the modal using ID.showModal() method -->
+                                        <button id="next-btn" class="btn bg-green-500 w-full text-xl font-semibold text-white " onclick="my_modal_5.showModal()">Next</button>
+                                        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                                            <div class="modal-box">
+                                                <h3 class="font-bold text-lg">Hello!</h3>
+                                                <p class="py-4">Press ESC key or click the button below to close</p>
+                                                <div class="modal-action">
+                                                    <form method="dialog">
+                                                        <!-- if there is a button in form, it will close the modal -->
+                                                        <button class="btn">Close</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </dialog>
+                                    </div>
                             </div>
+                            <!-- modal -->
+                            
+                            <!-- modal end -->
                             <div class="flex justify-between mt-8">
                                 <h4 class="font-bold border-b-2 border-solid border-gray-400">Terms and Conditions</h4>
                                 <h4 class="font-bold border-b-2 border-solid border-gray-400">Cancellation Policy</h4>
@@ -394,6 +427,7 @@
     </main>
     <footer></footer>
     <script src="js/first.js"></script>
+    <script src="js/second.js"></script>
 </body>
 
 </html>
